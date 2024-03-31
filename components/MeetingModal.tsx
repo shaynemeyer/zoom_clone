@@ -48,7 +48,10 @@ function MeetingModal({
             {title}
           </h1>
           {children}
-          <Button className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0">
+          <Button
+            className="bg-blue-1 focus-visible:ring-0 focus-visible:ring-offset-0"
+            onClick={handleClick}
+          >
             {buttonIcon && (
               <Image src={buttonIcon} alt="icon" width={13} height={13} />
             )}
